@@ -235,7 +235,7 @@ body {
     font-size: clamp(3rem, 6vw, 5rem);
     font-weight: 500;
     letter-spacing: -0.03em;
-    line-height: 1.1;
+    line-height: 0.9;
 }
 .about-body {
     font-size: 1.125rem;
@@ -474,7 +474,7 @@ body {
     font-size: clamp(3rem, 8vw, 7rem);
     font-weight: 500;
     letter-spacing: -0.04em;
-    line-height: 1;
+    line-height: 0.9;
     margin-bottom: 2rem;
 }
 .advisory-subtitle {

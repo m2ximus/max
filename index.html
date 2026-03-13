@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Alchemist of Lila</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <nav class="top-bar">
+        <a href="/" class="top-bar-name">The Alchemist of Lila</a>
+        <ul class="top-bar-links">
+            <li><a href="#creations">Creations</a></li>
+            <li><a href="advisory.html">Advisory</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="https://github.com/m2ximus" target="_blank">GitHub</a></li>
+        </ul>
+    </nav>
+
+    <div class="h-progress" id="hProgress"></div>
+    <div class="section-label" id="sectionLabel">Creations</div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-eyebrow">Portfolio 2025</div>
+        <h1 class="hero-title">
+            The Alchemist
+            <span class="hero-title-line2">of Lila</span>
+        </h1>
+        <p class="hero-desc">A cocktail of my projects exploring humanity, altruism, consciousness and play.</p>
+        <div class="hero-scroll-line"></div>
+    </section>
+
+    <!-- Horizontal scroll section -->
+    <div class="horizontal-wrapper" id="creations">
+        <div class="horizontal-track" id="hTrack">
+
+            <div class="h-card">
+                <div class="h-card-inner">
+                    <div class="h-card-bg" style="background: linear-gradient(135deg, #0a2828 0%, #1a5c5c 50%, #2d9f9f 100%);"></div>
+                    <div class="h-card-number">01</div>
+                    <div class="h-card-content">
+                        <div class="h-card-category">Social Good</div>
+                        <h2 class="h-card-title">Little Box</h2>
+                        <p class="h-card-tagline">Donate where you are. Physical boxes around the world connect you to local causes. Scan, give, and watch your impact ripple across the map.</p>
+                        <a href="projects/littlebox.html" class="h-card-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-card">
+                <div class="h-card-inner">
+                    <div class="h-card-bg" style="background: linear-gradient(135deg, #1a0a1a 0%, #3a1a3a 50%, #6a2d6a 100%);"></div>
+                    <div class="h-card-number">02</div>
+                    <div class="h-card-content">
+                        <div class="h-card-category">Consciousness</div>
+                        <h2 class="h-card-title">Perception</h2>
+                        <p class="h-card-tagline">See what others can't. A marketplace where seekers post blind targets and perceivers prove their abilities — scored and verified.</p>
+                        <a href="projects/perception.html" class="h-card-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-card">
+                <div class="h-card-inner">
+                    <div class="h-card-bg" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 50%, #555 100%);"></div>
+                    <div class="h-card-number">03</div>
+                    <div class="h-card-content">
+                        <div class="h-card-category">Digital Legacy</div>
+                        <h2 class="h-card-title">Exit State</h2>
+                        <p class="h-card-tagline">Your digital life deserves a plan. Crypto wallets, passwords, online accounts — traditional wills weren't built for this.</p>
+                        <a href="projects/exit-state.html" class="h-card-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-card">
+                <div class="h-card-inner">
+                    <div class="h-card-bg" style="background: linear-gradient(135deg, #0a0a28 0%, #1a1a5c 50%, #2d2d9f 100%);"></div>
+                    <div class="h-card-number">04</div>
+                    <div class="h-card-content">
+                        <div class="h-card-category">Telepathy</div>
+                        <h2 class="h-card-title">Third Eye Chat</h2>
+                        <p class="h-card-tagline">Proving telepathy is real. Two strangers connect beyond words, and the system measures whether the connection is deeper than chance. Verified on-chain.</p>
+                        <a href="projects/third-eye-chat.html" class="h-card-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-card">
+                <div class="h-card-inner">
+                    <div class="h-card-bg" style="background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 50%, #2d6a9f 100%);"></div>
+                    <div class="h-card-number">05</div>
+                    <div class="h-card-content">
+                        <div class="h-card-category">Travel</div>
+                        <h2 class="h-card-title">Trip</h2>
+                        <p class="h-card-tagline">Your next trip, planned in under a minute. Where you're going, who you're with, what you love — turned into a day-by-day itinerary.</p>
+                        <a href="projects/trip.html" class="h-card-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-card">
+                <div class="h-card-inner">
+                    <div class="h-card-bg" style="background: linear-gradient(135deg, #0a2818 0%, #1a5c2d 50%, #2d9f4a 100%);"></div>
+                    <div class="h-card-number">06</div>
+                    <div class="h-card-content">
+                        <div class="h-card-category">For Brands</div>
+                        <h2 class="h-card-title">Drops</h2>
+                        <p class="h-card-tagline">Pokemon Go, but the prizes are real. Brands drop cash, gift cards, and experiences at real locations. Users race to find them.</p>
+                        <a href="projects/drops.html" class="h-card-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-card">
+                <div class="h-card-inner">
+                    <div class="h-card-bg" style="background: linear-gradient(135deg, #28180a 0%, #5c3a1a 50%, #9f6a2d 100%);"></div>
+                    <div class="h-card-number">07</div>
+                    <div class="h-card-content">
+                        <div class="h-card-category">Voice Clone</div>
+                        <h2 class="h-card-title">Foan</h2>
+                        <p class="h-card-tagline">Talk to anyone. Hear their real voice. Fans have real-time voice conversations with clones of their favourite creators.</p>
+                        <a href="projects/foan.html" class="h-card-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-card">
+                <div class="h-card-inner">
+                    <div class="h-card-bg" style="background: linear-gradient(135deg, #1a0a28 0%, #3a1a5c 50%, #6a2d9f 100%);"></div>
+                    <div class="h-card-number">08</div>
+                    <div class="h-card-content">
+                        <div class="h-card-category">Wellness</div>
+                        <h2 class="h-card-title">Together</h2>
+                        <p class="h-card-tagline">Reclaim your weekends. A memento mori-inspired planner that calculates your remaining weekends and fills each one with something worth doing.</p>
+                        <a href="projects/together.html" class="h-card-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- About -->
+    <section class="about-section" id="about">
+        <div class="about-inner">
+            <h2 class="about-heading">Building things that connect people.</h2>
+            <p class="about-body">
+                Every project here started with the same question: how do we make this more human? Voice, consciousness, generosity, telepathy, travel, legacy — different angles on the same pursuit. These are the answers so far.
+            </p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advisory — The Alchemist of Lila</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <nav class="top-bar">
+        <a href="/" class="top-bar-name">The Alchemist of Lila</a>
+        <ul class="top-bar-links">
+            <li><a href="/">Creations</a></li>
+            <li><a href="advisory.html" class="active">Advisory</a></li>
+            <li><a href="https://github.com/m2ximus" target="_blank">GitHub</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="advisory-hero">
+        <div class="advisory-hero-content">
+            <div class="advisory-eyebrow">Advisory</div>
+            <h1 class="advisory-title">Let's build<br>something together.</h1>
+            <p class="advisory-subtitle">Strategy sessions for founders, creators, and teams building at the intersection of technology, consciousness, and human connection.</p>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="advisory-pricing">
+        <div class="advisory-pricing-inner">
+
+            <!-- Discovery -->
+            <div class="pricing-card pricing-card-discovery">
+                <div class="pricing-badge">Start here</div>
+                <h2 class="pricing-name">Intro / Discovery Call</h2>
+                <p class="pricing-desc">A single session to explore what you're building, where you're stuck, and whether we're the right fit to work together.</p>
+                <div class="pricing-details">
+                    <div class="pricing-duration">60 min</div>
+                    <div class="pricing-amount">Free</div>
+                </div>
+                <a href="#book" class="pricing-cta" data-tier="discovery">Book a Discovery Call</a>
+            </div>
+
+            <!-- 4-Pack -->
+            <div class="pricing-card pricing-card-pack">
+                <div class="pricing-badge">Most popular</div>
+                <h2 class="pricing-name">4-Session Pack</h2>
+                <p class="pricing-desc">Four focused advisory calls. Product strategy, technical architecture, go-to-market, fundraising — whatever moves the needle most.</p>
+                <div class="pricing-details">
+                    <div class="pricing-duration">4 x 60 min calls</div>
+                    <div class="pricing-amount">$1,000</div>
+                    <div class="pricing-breakdown">$250 per session — paid upfront</div>
+                </div>
+                <a href="#book" class="pricing-cta" data-tier="pack">Book 4 Sessions</a>
+            </div>
+
+            <!-- Monthly -->
+            <div class="pricing-card pricing-card-monthly">
+                <div class="pricing-badge">Full access</div>
+                <h2 class="pricing-name">Monthly Advisory</h2>
+                <p class="pricing-desc">Ongoing strategic partnership. Weekly calls, async support, and a direct line when things move fast. For teams that want a thought partner on speed dial.</p>
+                <div class="pricing-details">
+                    <div class="pricing-duration">4 calls/month + async</div>
+                    <div class="pricing-amount">$4,000<span class="pricing-period">/month</span></div>
+                </div>
+                <a href="#book" class="pricing-cta" data-tier="monthly">Start Monthly Advisory</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- What you get -->
+    <section class="advisory-features">
+        <div class="advisory-features-inner">
+            <div class="advisory-features-label">What to expect</div>
+            <div class="advisory-features-grid">
+                <div class="advisory-feature">
+                    <div class="advisory-feature-num">01</div>
+                    <h3 class="advisory-feature-title">No fluff, real strategy</h3>
+                    <p class="advisory-feature-desc">Every session is focused on tangible outcomes. You leave with a clear direction, not a slide deck.</p>
+                </div>
+                <div class="advisory-feature">
+                    <div class="advisory-feature-num">02</div>
+                    <h3 class="advisory-feature-title">Product to launch</h3>
+                    <p class="advisory-feature-desc">From concept to architecture to market. Practical advice from someone who ships full-stack products end to end.</p>
+                </div>
+                <div class="advisory-feature">
+                    <div class="advisory-feature-num">03</div>
+                    <h3 class="advisory-feature-title">Human-first thinking</h3>
+                    <p class="advisory-feature-desc">Technology is a tool. The real question is always: does this connect people or distance them?</p>
+                </div>
+                <div class="advisory-feature">
+                    <div class="advisory-feature-num">04</div>
+                    <h3 class="advisory-feature-title">Built across domains</h3>
+                    <p class="advisory-feature-desc">Voice, Web3, social good, marketplaces, SaaS — pattern recognition from building across very different industries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="advisory-booking" id="book">
+        <div class="advisory-booking-inner">
+            <h2 class="advisory-booking-title">Pick a time</h2>
+            <p class="advisory-booking-desc">Select a tier above, then choose a slot that works for you.</p>
+
+            <!-- Cal.com inline embed -->
+            <!-- SETUP: Replace YOUR_USERNAME below with your Cal.com username -->
+            <div id="cal-embed" style="width:100%;min-height:600px;overflow:auto;border-radius:16px;border:1px solid rgba(255,255,255,0.1);"></div>
+            <script>
+                (function (C, A, L) {
+                    let p = function (a, ar) { a.q.push(ar); };
+                    let d = C.document;
+                    C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else { p(cal, ar); } return; } p(cal, ar); };
+                })(window, "https://app.cal.com/embed/embed.js", "init");
+
+                // Initialize Cal.com embed
+                Cal("init", "advisory", { origin: "https://cal.com" });
+                Cal.ns.advisory("inline", {
+                    elementOrSelector: "#cal-embed",
+                    // TODO: Replace with your Cal.com username/event-slug
+                    calLink: "YOUR_USERNAME",
+                    layout: "month_view",
+                    config: {
+                        theme: "dark"
+                    }
+                });
+                Cal.ns.advisory("ui", {
+                    theme: "dark",
+                    styles: { branding: { brandColor: "#ffffff" } },
+                    hideEventTypeDetails: false,
+                    layout: "month_view"
+                });
+            </script>
+        </div>
+    </section>
+
+    <nav class="project-nav">
+        <a href="/">← Back to Creations</a>
+    </nav>
+
+    <script src="script.js"></script>
+    <script>
+        // Advisory page animations
+        gsap.from('.advisory-eyebrow', { opacity: 0, y: 20, duration: 0.8, delay: 0.2 });
+        gsap.from('.advisory-title', { opacity: 0, y: 50, duration: 1.2, delay: 0.4, ease: 'power3.out' });
+        gsap.from('.advisory-subtitle', { opacity: 0, y: 30, duration: 0.8, delay: 0.7 });
+
+        // Pricing cards stagger
+        gsap.from('.pricing-card', {
+            scrollTrigger: { trigger: '.advisory-pricing', start: 'top 70%' },
+            opacity: 0,
+            y: 60,
+            stagger: 0.15,
+            duration: 0.8,
+            ease: 'power3.out'
+        });
+
+        // Features
+        gsap.from('.advisory-feature', {
+            scrollTrigger: { trigger: '.advisory-features', start: 'top 70%' },
+            opacity: 0,
+            y: 40,
+            stagger: 0.1,
+            duration: 0.7,
+            ease: 'power3.out'
+        });
+
+        // Booking
+        gsap.from('.advisory-booking-inner', {
+            scrollTrigger: { trigger: '.advisory-booking', start: 'top 70%' },
+            opacity: 0,
+            y: 40,
+            duration: 0.8,
+            ease: 'power3.out'
+        });
+
+        // Tier selection — highlight selected card and scroll to booking
+        document.querySelectorAll('.pricing-cta').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const tier = btn.getAttribute('data-tier');
+
+                // Highlight active card
+                document.querySelectorAll('.pricing-card').forEach(c => c.classList.remove('selected'));
+                btn.closest('.pricing-card').classList.add('selected');
+
+                // Smooth scroll to booking
+                const bookSection = document.getElementById('book');
+                gsap.to(window, {
+                    duration: 1,
+                    scrollTo: { y: bookSection, offsetY: 50 },
+                    ease: 'power3.inOut'
+                });
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+</body>
+</html>
